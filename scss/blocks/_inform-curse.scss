@@ -1,0 +1,92 @@
+.inform-curse {
+    background-color: $color-white;
+    min-height: 630px;
+    &__title {
+        color: $color-dark;
+    font-size: clamp(1rem, 0.857rem + 0.71vw, 1.5rem);// 24px
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 15px;
+    }
+    &__descr {
+        color: $color-dark;
+        padding: 0 10px 0;
+        max-width: 557px;
+    margin: 0 auto 30px;
+    }
+}
+.curse-about {
+    color: $color-dark;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 15px;
+    padding-bottom: 30px;
+    &__card {
+        width: 250px;
+        height: 350px;
+        position: relative;
+        box-shadow: 3px 4px 60px 0px rgba(0, 0, 0, 0.25);
+    background: $color-white;
+    &:hover {
+        background-color: $bg-body;
+        color: $color-white;
+    }
+    
+    }
+    &__icon {
+        position: absolute;
+        top: 42px;
+        left: 60px;
+        rotate: 90deg;
+    }
+    
+    &__inner {
+        span {
+            position: absolute;
+            top: 85px;
+            left: 102px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background-color: $bg-bt-link;
+      color: $color-white;
+    font-family:"MontaguSlab";
+    font-size: clamp(0.75rem, 0.471rem + 1.14vw, 1.5rem);
+        }
+        p {
+            position: absolute;
+            top: 30px;
+            left: 92px;
+            rotate: 90deg;
+            color: $color-white;
+            z-index: 10;
+            text-transform: uppercase;
+          
+        }
+    }
+    &__name {
+     
+        margin-bottom: 10px;
+    
+    }
+    &__name1  {
+        margin-bottom: 10px;
+    
+    }
+    &__name2 {
+        margin-bottom: 30px;
+    
+    }
+    
+    &__desc {
+        padding: 175px 19px 0;
+    }
+    &__link {
+        margin: 0 20px;
+    }
+}

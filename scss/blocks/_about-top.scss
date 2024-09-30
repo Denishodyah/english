@@ -1,0 +1,44 @@
+.about {
+    background-color: $color-white;
+    color: $color-dark;
+    min-height: 900px;
+    padding-bottom: 10px;
+    
+}
+.about-top {
+    position: relative;
+    bottom: 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    &__item {
+        border-radius: $border-radius;
+        box-shadow: $shadow;
+        background: $color-white;
+        width: 150px;
+        padding: 10px;
+        transition: all $transition-duration;
+       
+            @media(hover: hover) {
+                &:hover{
+                    background-color: $bg-body;
+                    color: $color-white;
+                    }
+                }
+                @media (hover: none) {
+                &:active {
+                    background-color: $bg-body;
+            color: $color-white;
+                   
+                }
+        }
+    }
+    &__description {
+        text-align: center;
+        font-size: 12px;
+    }
+    &__icon {
+        margin: 5px auto;
+    }
+}   

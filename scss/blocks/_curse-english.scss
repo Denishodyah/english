@@ -1,0 +1,39 @@
+.curse-english {
+    position: relative;
+    text-align: center;
+    min-height: 600px;
+    &__name {
+        color: $bg-bt-link;
+    font-family: "MontserratSemibold";
+    font-size: clamp(1.25rem, 1rem + 1.25vw, 2.125rem);//34px
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    }
+    &__title {
+    font-size: clamp(1rem, 0.857rem + 0.71vw, 1.5rem);//24px
+    font-weight: 400;
+    margin-bottom: 15px;
+    
+    
+    }
+    &__description {
+    font-size: 12px;
+    max-width: 467px;
+    margin: 0 auto 20px;
+    
+    }
+    &__link {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        padding: 8px 37px;
+        background: $bg-bt-link;
+    font-size: 12px;
+    text-transform: uppercase;
+    }
+    
+    &__decor {
+        position: absolute;
+        top: 530px;
+       left: 0;
+    }
+}

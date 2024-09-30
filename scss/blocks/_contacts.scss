@@ -1,0 +1,53 @@
+.contacts {
+  padding-top: 87px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "MontserratMedium";
+}
+  
+
+.contacts__title {
+font-size: clamp(1rem, 0.814rem + 0.76vw, 1.5rem);//24px
+text-transform: uppercase;
+font-weight: 500;
+margin-bottom: 16px;
+}
+.contacts__descr {
+    text-align: center;
+    max-width: 564px;
+    margin-bottom: 34px;
+}
+.contacts__subtitle {
+font-size: clamp(0.75rem, 0.536rem + 1.07vw, 1.5rem);
+text-transform: uppercase;
+margin-bottom: 10px;
+}
+.contacts__tel {
+    margin-bottom: 34px;
+    &:focus-visible {
+        outline:  2px solid $accent;
+    }
+}
+.contacts__subtitle-2 {
+    font-size: clamp(0.75rem, 0.536rem + 1.07vw, 1.5rem);
+    margin-bottom: 10px;
+}
+.contacts__mail {
+    display: inline-flex;
+    margin-bottom: 93px;
+    &:focus-visible {
+        outline:  2px solid $accent;
+    }
+
+}
+.contacts__button {
+    display: inline-flex;
+    justify-content: center;
+    
+width: 218px;
+border: none;
+background-color: $bg-bt-link;
+color: $color-white;
+padding: 11px 56px;
+}

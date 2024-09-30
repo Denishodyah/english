@@ -1,0 +1,45 @@
+.hero {
+    min-height: 600px;
+    &__img {
+       position: relative;
+       z-index: -1;
+       margin-left: -80px;
+       mask-image: url(./../image/Rectangle\ 16.png);
+    }
+    &__description {
+    max-width: 537px;
+    margin-bottom: 15px;
+    }
+    &__decor {
+        position: relative;
+        top: 150px;
+        @media (max-width: 1300px) {
+            top: 5px;
+            margin-top: 85px;
+            
+        }
+    }
+}
+
+.hero-left {
+&__title {
+    font-family: "MontserratMedium";
+max-width: 720px;
+font-size:clamp(1.25rem, 0.786rem + 1.9vw, 2.5rem);//40px
+font-weight: 500;
+margin-bottom: 15px;
+span { 
+    color: $accent;
+}
+}
+&__link {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 12px;
+text-transform: uppercase;
+background-color: $bg-bt-link;
+height: $button-height;
+}
+
+}

@@ -1,0 +1,27 @@
+.about-bottom {
+    &__item {
+        display: flex;
+        gap: 50px;
+        @media (max-width: 1000px) {
+            flex-direction: column;
+            
+        }
+    }
+    &__title {
+        margin-bottom: 15px;
+        font-size:clamp(1rem, 0.814rem + 0.76vw, 1.5rem);//24px
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    &__description {
+        text-align: center;
+        font-size:clamp(0.75rem, 0.564rem + 0.76vw, 1.25rem);//20px
+    }
+  
+}
+.about-bottom > .about-bottom__item {
+    margin-bottom: 25px;
+}
+.about-bottom__item > .about-bottom__description {
+    margin-top: 23px;
+}

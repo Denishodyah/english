@@ -1,0 +1,60 @@
+.teaching {
+    min-height: 980px;
+    color: $color-dark;
+    background-color: $color-white;
+    padding:  60px 0 40px;
+    @media (max-width: 1200px) {
+        min-height: 850px;
+        
+    }
+}
+
+.teaching-block {
+    display: flex;
+    column-gap: 177px;
+    text-align: center;
+    @media (max-width: 1200px) {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    &__title {
+    font-family: "MontserratMedium";
+    font-size:clamp(1rem, 0.814rem + 0.76vw, 1.5rem);//24px
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: $color-dark;
+    }
+    &__descr {
+        color: $color-gray;
+    font-size: 14px;
+    @media (max-width: 1200px) {
+        max-width: 500px;
+        
+    }
+    }
+    &__link {
+        display: inline-flex;
+        height: $button-height-small;
+        background-color: $bg-bt-link;
+        color: $color-white;
+        padding: 7px 27px;
+        margin-bottom: 84px;
+    
+    }
+    &__img {
+        position: relative;
+        right: 30px;
+        margin-bottom: 77px;
+        @media (max-width: 1200px) {
+            display: none;
+            
+        }
+    }
+    &__img2 {
+        position: relative;
+        left: 28px;
+        margin-bottom: 77px;
+    }
+}
+
